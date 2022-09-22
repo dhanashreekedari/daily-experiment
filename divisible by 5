@@ -1,0 +1,16 @@
+//WAP to accept the number from user and display a square if no is divisible by 5
+import  java.util.*;
+public class demo
+{
+    public static void main(String args[])
+
+    {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        if (num % 5 == 0) {
+            System.out.println("divisible");
+        } else {
+            System.out.println("not divisible");
+        }
+    }
+}
