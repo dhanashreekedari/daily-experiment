@@ -1,0 +1,16 @@
+// wap to accept from user and check eligible for voting or not 
+import  java.util.*;
+public class demo
+{
+    public static void main(String args[])
+
+    {
+        Scanner input = new Scanner(System.in);
+        int x = input.nextInt();
+        if (x >= 18) {
+            System.out.println("adult eligible for voting");
+        } else {
+            System.out.println("not eligible for voting");
+        }
+    }
+}
