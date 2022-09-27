@@ -1,0 +1,103 @@
+WAP to Accept a no from the user and perform the following tasjk
+1:Logical Operator
+2: Arithmetic Operation
+3: Reverse of the No
+4: swapping of two no with third variable
+5:Swapping without third variable
+6:Accept the value find out the factorial and pass the value of factorial to another function 7
+7:Find out the sm of digit
+
+import java.util.Scanner;
+
+public class mixfunction {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in)
+        System.out.println("1 logical operator");
+        System.out.println(" enter num1");
+        int num1 = sc.nextInt();
+        System.out.println(" enter num2");
+        int num2 = sc.nextInt();
+        if ((num1 > num2)) ||((num2 > num1))
+        {
+            System.out.println("it is true");
+        }
+        else
+        {
+            System.out.println("it is false");
+        }
+    }
+    void Arithmetic()
+    {
+        System.out.println(" 2 Arithmatic");
+        System.out.println(" enter num1");
+    int num1 =sc.nextInt();
+        System.out.println(" enter num2");
+    int num2=sc.nextInt();
+    if ("addition of num1 and num2 is :+(num1+num2));
+    }
+    void reversing () {
+        System.out.println(" 3 reversing");
+        int rev = 0, rem;
+        System.out.println(" enter num");
+        int num = sc.nextInt();
+        while (num > 0) {
+            rem = num % 10;
+            num = num / 10;
+        }
+        System.out.println(" reverse number is :" + rev);
+    }
+    void swap() {
+        System.out.println("4 swapping ");
+        System.out.println("enter num1");
+        int num1 = sc.nextInt();
+        System.out.println("enter num2");
+        int num2 = sc.nextInt();
+        int num3 = 0;
+        System.out.println("before swapping :" + num1 + " " + num2);
+    }
+    void swapwithout() {
+        System.out.println("5 swapping no with 2 variables");
+        System.out.println("enter num1");
+        int num1 = sc.nextInt();
+        System.out.println("enter num2");
+        int num2 = sc.nextInt();
+        System.out.println("before swapping:" + num1 + " " + num2);
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        System.out.println("after swapping:" + num1 + " "num2);
+    }
+    void factorial() {
+        void factii(int fact)
+        {
+            System.out.println("The Factorial is : " +fact);
+        }
+
+
+        void sum() {
+            System.out.println("\n7th sum of Digits \nThe sum of Digits is :"+factorial());
+        }
+        int factorial() {
+            System.out.println("6th Factorial of Number ");
+            System.out.println("Enter a number :");
+            int num=sc.nextInt();
+            int fact=1;
+            int sum1=0;
+            for(int i=num;i>=1;i--) {
+                fact=fact*i;
+                sum1=sum1+i;
+            }
+            factii(fact);
+            return sum1;
+        }
+        public static void main(String[] args) {
+            MixFuction m=new MixFuction();
+            m.logical();
+            m.Arithmatic();
+            m.Reverse();       //method calling
+            m.Swap();
+            m.swapWithout();
+            m.sum();
+        }
+    }
+
