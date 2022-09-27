@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class switch {
+    public static void main(String args[]) {
+        int x;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. unary operator");
+        System.out.println("2. binary operator");
+        System.out.println("3. ternary operator");
+        x = sc.nextInt();
+        switch (x) {
+            case 1:
+                System.out.println(" unary operator");
+                break;
+            case 2:
+                System.out.println(" binary operator");
+                break;
+            case 3:
+                System.out.println(" ternary operator");
+                break;
+
+            default:
+                System.out.println(" invalid choice");
+                break;
+        }
+    }
+
+   }
+
+
+
+
